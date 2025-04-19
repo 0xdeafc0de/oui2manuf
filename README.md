@@ -42,12 +42,8 @@ go build -o oui2manuf
 
 ## Examples -
 
-./oui2manuf 00:00:20:33:11:22
-# Manufacturer: Dataindustri (24-bit match)
+./oui2manuf 00:00:20:33:11:22   // Manufacturer: Dataindustri (24-bit match)
 
-./oui2manuf FC:D2:B6:1A:00:01
-# Manufacturer: Link (28-bit match)
+./oui2manuf FC:D2:B6:1A:00:01   // Manufacturer: Link (28-bit match)
 
-./oui2manuf 8C:1F:64:DC:61:99
-# Manufacturer: R&K (36-bit match)
-
+./oui2manuf 8C:1F:64:DC:61:99   // Manufacturer: R&K (36-bit match)
