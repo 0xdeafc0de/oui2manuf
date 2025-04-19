@@ -1,16 +1,11 @@
-There may be numerous version of oui lookup tools, but this one uses Wireshark manufacturer database unlike others using IEEE database.
-The advantage of Wireshark DB is it has more entries and supports 28 and 36 bit mac blocks too. The IEEE one only have 24 bit blocks.
-
-e.g. if you search FC:D2:B6:20:11:22 which is mac-address from a 28 bit block assigned to Soma GmbH.
-The IEEE DB will match it against a defuakt 24 bit and shows as "IEEE Registration Authority", however Wireshark manufacturer database clearly shows it as FC:D2:B6:20:00:00/28 Soma GmbH
-
 # oui2manuf
-
 A simple and efficient Go-based command-line tool to look up MAC address manufacturers using the **Wireshark OUI/manufacturer database**.
 
 ## Why This Tool?
+There may be numerous version of oui lookup tools, but this one uses Wireshark manufacturer database unlike others using IEEE database.
+The advantage of Wireshark DB is it has more entries and supports 28 and 36 bit mac blocks too. The IEEE one only have 24 bit blocks.
 
-There are several OUI lookup tools available, but **`oui2manuf` stands out by using the Wireshark manufacturer database instead of the IEEE registry**. This offers significant advantages:
+**`oui2manuf` stands out by using the Wireshark manufacturer database instead of the IEEE registry**. This offers significant advantages:
 
 - **Wireshark's database supports more granular resolution**, including **28-bit and 36-bit MAC address blocks**.
 - **IEEE's database only contains 24-bit blocks**, which can result in incorrect or generic lookups.
